@@ -1,0 +1,14 @@
+{
+  "name": "pixiv-wasd",
+  "version": "1.0.0",
+  "description": "PixivでWASDキーを上下左右に割り当てる拡張機能です。",
+  "manifest_version": 2,
+  "content_scripts": [
+   {
+     "matches": ["*://www.pixiv.net/member_illust.php*"],
+     "js": ["bindwasd.bundle.js"]
+   }
+  ],
+  "browser_action": {
+  }
+}
