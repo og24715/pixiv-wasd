@@ -3,7 +3,7 @@ const arrowUpKeyEvent = new KeyboardEvent('keydown', { code: 'ArrowUp', key: 'Ar
 const arrowLeftKeyEvent = new KeyboardEvent('keydown', { code: 'ArrowLeft', key: 'ArrowLeft', keyCode: 37 });
 const arrowRightKeyEvent = new KeyboardEvent('keydown', { code: 'ArrowRight', key: 'ArrowRight', keyCode: 39 });
 
-function handleKeyup(e) {
+function handleKeydown(e) {
   switch (e.code) {
     case 'KeyS':
       document.dispatchEvent(arrowDownKeyEvent);
@@ -22,4 +22,4 @@ function handleKeyup(e) {
   }
 }
 
-document.addEventListener('keyup', handleKeyup);
+document.addEventListener('keydown', handleKeydown);
